@@ -10,7 +10,10 @@ export const loginUser = (req, res) => {
     if(user) //user found inside users array containing user objects
     {
         if(user.password === password)
-            res.send("Success");
+        {
+            req.session.user = user;
+            res.redirect("/userPage");
+        }
         else
             res.send("Invalid email or password");
     }

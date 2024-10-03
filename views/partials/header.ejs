@@ -1,0 +1,16 @@
+<!-- Partial: header.ejs for userPage.ejs-->
+<header>
+    <link rel="stylesheet" href="/css/styleHeader.css">
+    <div class="header">
+        <nav>
+            <ul>
+                <% if (user) { %>
+                    <li class="hello"><em>Hello <%= user.userName %></em></li>
+                <% } else { %>
+                    <li><em>Welcome, Guest!</em></li>
+                <% } %>
+                <li class="logout-link"><a href="/logout">Log out</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

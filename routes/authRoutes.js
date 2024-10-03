@@ -5,4 +5,10 @@ const router = express.Router();
 
 router.post("/login", loginUser);
 
+router.get("/logout", (req, res) => {
+    req.session.user = null;
+    res.redirect("/");
+
+});
+
 export default router;
