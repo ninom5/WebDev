@@ -45,3 +45,50 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+}
+
+.select-box {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.options-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.option {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.option img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.option:hover {
+    background-color: #f1f1f1;
+}
+
+.active {
+    display: block;
+}

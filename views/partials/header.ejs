@@ -1,6 +1,7 @@
 <!-- Partial: header.ejs for userPage.ejs-->
 <header>
     <link rel="stylesheet" href="/css/styleHeader.css">
+    <script src="/js/script.js"></script>
     <div class="header">
         <nav>
             <ul>
@@ -11,11 +12,20 @@
                 <% } %>
                 <li class="logout-link"><a href="/logout">Log out</a></li>
             </ul>
-            <select name="selector" id="sele">
-                <!-- <option value="Menu"><img src="/images/bx-user (2).svg" alt=""></option> -->
-                <option value="your_profile">Your profile</option>
-                <option value="adsasd">about</option>
-            </select>
+            <div class="custom-select">
+                <div class="select-box">Select an option</div>
+                <div class="options-container">
+                    <div class="option" data-value="option1">
+                        Your profile
+                    </div>
+                    <div class="option" data-value="option2">
+                        aha
+                    </div>
+                    <div class="option" data-value="option3">
+                        aaiaiai
+                    </div>
+                </div>
+            </div>
         </nav>
     </div>
 </header>
